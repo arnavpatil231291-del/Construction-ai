@@ -163,3 +163,8 @@ def analyze(feature: str, text: str = Form(""), data: str = Form("{}"),
         raise HTTPException(400, "Provide some input")
     prompt = text.strip() + ("\nProject data: " + json.dumps(fields) if fields else "")
     return call_llm(feature, system, schema, prompt, img)
+
+from fastapi.staticfiles import StaticFiles
+dist = os.path.join(os.path.dirname(__file__), "..", "frontend", "dist")
+if os.path.isdir(dist):
+    app.mount("/", StaticFiles(directory=dist, html=True), name="web")
