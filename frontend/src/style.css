@@ -1,0 +1,16 @@
+body{font-family:system-ui,sans-serif;margin:0;background:#f4f5f7;color:#1c1f26}
+main{max-width:900px;margin:0 auto;padding:16px}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+nav button{padding:8px 12px;border:1px solid #c9ced6;background:#fff;border-radius:6px;cursor:pointer}
+nav button.on{background:#e8710a;color:#fff;border-color:#e8710a}
+.card{background:#fff;border-radius:8px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px #0002}
+label{display:block;font-size:13px;margin:8px 0 2px}
+input,textarea{width:100%;box-sizing:border-box;padding:7px;border:1px solid #c9ced6;border-radius:6px;font:inherit}
+.go{margin-top:12px;padding:9px 18px;background:#e8710a;color:#fff;border:0;border-radius:6px;cursor:pointer}
+.go:disabled{opacity:.5}
+.err{color:#b00020;margin-top:10px}
+table{border-collapse:collapse;width:100%;font-size:13px;overflow-x:auto;display:block}
+td,th{border:1px solid #dde;padding:4px 8px;text-align:left}
+dt{font-weight:600;font-size:12px;text-transform:uppercase;color:#666;margin-top:8px}
+dd{margin:2px 0 0}
+img.pv{max-width:100%;max-height:240px;margin-top:8px;border-radius:6px}
